@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import AppN from './app/AppN';
+import AppUser from './app/AppUser';
+import UseCookie from './lib/UseCookie';
 
 function App() {
+  const [user, setUser] = UseCookie('user')
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        user?.user
+        ?
+        <AppUser />
+        :
+        <AppN />
+      }
+    
     </div>
   );
 }
