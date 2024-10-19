@@ -7,6 +7,7 @@ import { Register } from '../Auth/Register'
 import { Login } from '../Auth/Login'
 import SlideInNotifications from '../addons/SlideNotification'
 import Footer from '../Footer/Footer'
+import Home from '../home/Home'
 
 const AppN = () => {
   return (
@@ -25,11 +26,15 @@ const AppN = () => {
                 <Route path='/contact-us' element={ <ContactUs /> } />
                 <Route path='/invitation/accept' element={ <InvitationRequest /> } />
                 <Route path='/create content' element={ <Login /> } />
-                <Route path='/our values' element={ <OurValues /> } />
-                <Route path='/about' element={ <AboutPage /> } />
-                <Route path='/faq' element={ <FaqPage /> } />
-                <Route path='/home' element={ <Landing /> } />
-                <Route path='/' element={ <Landing /> } /> */}
+                <Route path='/our values' element={ <OurValues /> } /> */}
+
+
+                {/* <Route path='/about' element={ <AboutPage /> } />
+                <Route path='/faq' element={ <FaqPage /> } /> */}
+
+
+                <Route path='/home' element={ <Home /> } />
+                <Route path='/' element={ <Home /> } />
         </Routes>
         <Footer />
     </div>
