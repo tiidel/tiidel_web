@@ -23,7 +23,7 @@ const Nav = () => {
       <div onClick={() => setShownav(false)} className={`shadow_n_nav_mob ${shownav ? 'show':''}`} />
       <div className='container'>
         <div className='nav_head'>
-          <h4 onClick={() => navigate('/')} className='logo_n'>Rank</h4>
+          <h4 onClick={() => navigate('/')} className='logo_n'>Tiidel</h4>
           <div className={`center_nav_n ${shownav ? "show_nav" : ""}`}>
             <ul>
               <li>Home</li>

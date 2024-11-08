@@ -102,9 +102,9 @@ export const Login = () => {
                         <div className='authenticate_form'>
                                 { isloading && <div className='line_loading' /> }
                                 <div className='company_name'> secured by tiidel</div>
-                                <div className='logo auth_logo'>Rank Management</div>
+                                <div className='logo auth_logo'>Tiidel Management</div>
                                 <h2 className='title'>Sign In</h2>
-                                <p>To continue to Rank</p>
+                                <p>To continue to Tiidel</p>
                                 <form onSubmit={submitForm} className='form_content'>
                                         {
                                                 formInputAlert.length > 1 && (

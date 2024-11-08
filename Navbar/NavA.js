@@ -31,7 +31,7 @@ const Chip = ({
     {
       text === 'Blog' 
       ?
-      <a href="https://blog.rank.com.ng" target="_blank" rel="noreferrer" 
+      <a href="https://blog.Tiidel.com.ng" target="_blank" rel="noreferrer" 
           className={`chip ${selected ? "selected" : ""}`}
       >
         <span className="nav_animated_text">{text}</span>

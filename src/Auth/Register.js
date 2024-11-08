@@ -74,7 +74,7 @@ export const Register = () => {
                                 { isloading && <div className='line_loading' /> }
                                 <div className='company_name'> secured by tiidel</div>
                                 <h2 className='title'>Create an account</h2>
-                                <p>To start to Rank</p>
+                                <p>To start to Tiidel</p>
                                 <form onSubmit={submitForm} className='form_content'>
                                         {
                                                 formInputAlert.length > 1 && (

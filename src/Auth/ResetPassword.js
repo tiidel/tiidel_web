@@ -73,7 +73,7 @@ export const ResetPassword = () => {
                         <div className='authenticate_form'>
                                 { isloading && <div className='line_loading' /> }
                                 <div className='company_name'> secured by tiidel</div>
-                                <div className='logo auth_logo'>Rank Management</div>
+                                <div className='logo auth_logo'>Tiidel Management</div>
                                 <h2 className='title'>Reset password</h2>
                                 <form onSubmit={submitForm} className='form_content'>
                                         {

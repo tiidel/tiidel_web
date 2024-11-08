@@ -68,9 +68,9 @@ export const ForgotPasswordEmailForm = () => {
                         <div className='authenticate_form auth_info'>
                                 { isloading && <div className='line_loading' /> }
                                 <div className='company_name'> secured by tiidel</div>
-                                <div className='logo auth_logo'>Rank Management</div>
+                                <div className='logo auth_logo'>Tiidel Management</div>
                                 <h2 className='title'>Forgot password</h2>
-                                <p>To continue to Rank</p>
+                                <p>To continue to Tiidel</p>
                                 <form onSubmit={submitForm} className='form_content'>
                                         {
                                                 formInputAlert.length > 1 && (

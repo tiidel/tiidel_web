@@ -87,9 +87,9 @@ export const InvitationRequest = () => {
                         <div className='authenticate_form'>
                                 { isloading && <div className='line_loading' /> }
                                 <div className='company_name'> secured by tiidel</div>
-                                <div className='logo auth_logo'>Rank Management</div>
+                                <div className='logo auth_logo'>Tiidel Management</div>
                                 <h2 className='title'>Create an account</h2>
-                                <p>To start to Rank</p>
+                                <p>To start to Tiidel</p>
                                 <form onSubmit={submitForm} className='form_content'>
                                         {
                                                 formInputAlert.length > 1 && (

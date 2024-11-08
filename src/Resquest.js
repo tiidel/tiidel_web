@@ -144,7 +144,7 @@ export const  auth = async (endpoint, data) => {
         }
     }
     try {
-        const response = await axios.post(`https://rankafrica.site/api/v1/auth/register/`, data, config);
+        const response = await axios.post(`https://Tiidelafrica.site/api/v1/auth/register/`, data, config);
         return response
     } catch (error) {
         return(error)
@@ -164,7 +164,7 @@ const update_token = async(tenant) => {
         "refresh": user?.refresh
     }
     try {
-        const response = await axios.post(`https://${tenant}.rankafrica.site/api/v1/auth/token/refresh/`, data, config)
+        const response = await axios.post(`https://${tenant}.Tiidelafrica.site/api/v1/auth/token/refresh/`, data, config)
         if(response.status === 200) {
             console.log(user);
             console.log(response.data);
@@ -182,7 +182,7 @@ const update_token = async(tenant) => {
 
 export const loginTenant = async(tenant, endpoint, data) => {
     try {
-        const response = await axios.post(`https:////${tenant}.rankafrica.site/api/v1${endpoint}`, data, config)
+        const response = await axios.post(`https:////${tenant}.Tiidelafrica.site/api/v1${endpoint}`, data, config)
         return response
     } catch (error) {
         return error
@@ -190,7 +190,7 @@ export const loginTenant = async(tenant, endpoint, data) => {
 }
 export const postTenant = async(tenant, endpoint, data) => {
     try {
-        const response = await axios.post(`https://${tenant}.rankafrica.site/api/v1${endpoint}`, data, tenantConfig)
+        const response = await axios.post(`https://${tenant}.Tiidelafrica.site/api/v1${endpoint}`, data, tenantConfig)
         return response
     } catch (error) {
         return error
@@ -199,7 +199,7 @@ export const postTenant = async(tenant, endpoint, data) => {
 
 export const getTenant = async(tenant, endpoint) => {
     try {
-        const response = await axios.get(`https://${tenant}.rankafrica.site/api/v1${endpoint}`, tenantConfig)
+        const response = await axios.get(`https://${tenant}.Tiidelafrica.site/api/v1${endpoint}`, tenantConfig)
         return response
 
     } catch (error) {
@@ -212,7 +212,7 @@ export const getTenant = async(tenant, endpoint) => {
 
 export const patchTenant = async(tenant, endpoint, data) => {
     try {
-        const response = await axios.patch(`https://${tenant}.rankafrica.site/api/v1${endpoint}`, data, tenantConfig)
+        const response = await axios.patch(`https://${tenant}.Tiidelafrica.site/api/v1${endpoint}`, data, tenantConfig)
         return response
     } catch (error) {
         return error

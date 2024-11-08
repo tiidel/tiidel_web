@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const tabs = ["Home", "Our Values", "Blog", "About", "FAQ", "Register", "Login"];
+const tabs = ["Home", "Invest", "Blog", "About", "FAQ", "Register", "Login"];
 
 const ChipTabs = () => {
   const [selected, setSelected] = useState(tabs[0]);
@@ -31,7 +31,7 @@ const Chip = ({
     {
       text === 'Blog' 
       ?
-      <a href="https://blog.rank.com.ng" target="_blank" rel="noreferrer" 
+      <a href="https://blog.Tiidel.com.ng" target="_blank" rel="noreferrer" 
           className={`chip ${selected ? "selected" : ""}`}
       >
         <span className="nav_animated_text">{text}</span>
