@@ -4,7 +4,7 @@
     padding: 2rem 0rem;
     position: sticky;
     top: 100%;
-    z-index: 0;
+    z-index: -1;
   }
   .footerWrapper .container{
     max-width: 93.75rem;
