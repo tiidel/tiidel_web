@@ -9,6 +9,7 @@ import SlideInNotifications from '../addons/SlideNotification'
 import Footer from '../Footer/Footer'
 import Home from '../home/Home'
 import FaqPage from '../Faq/FaqPage'
+import AboutPage from '../about/AboutPage'
 
 const AppN = () => {
   return (
@@ -35,6 +36,7 @@ const AppN = () => {
 
                 
                 <Route path='/home' element={ <Home /> } />
+                <Route path='/about' element={ <AboutPage /> } />
                 <Route path='/' element={ <Home /> } />
         </Routes>
         <Footer />
