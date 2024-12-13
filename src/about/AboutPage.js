@@ -112,17 +112,17 @@ const AboutPage = () => {
           <div className="contact-item">
             <FaPhoneAlt className="contact-icon" />
             <h3>Phone</h3>
-            <p>+237 670 89 53 67</p>
+            <p>+237 676 638 050</p>
           </div>
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
             <h3>Email</h3>
-            <p>info@goho.com</p>
+            <p>contact@tiidel.com</p>
           </div>
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
             <h3>Address</h3>
-            <p>Odza plaque L&B (Evondo fin gourdron)<br />Yaoundé, Cameroon</p>
+            <p>City Chemist Round-About<br />Bamenda, Cameroon</p>
           </div>
         </div>
       </section>
