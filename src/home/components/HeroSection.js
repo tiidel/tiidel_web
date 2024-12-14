@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Hero1 from "./hero_01.png";
+import Hero1 from "./hero_one.png";
 import Hero2 from "./hero_two.png";
 import Hero3 from "./hero_three.png";
 import Hero4 from "./hero_four.png";
@@ -9,7 +9,7 @@ const slides = [
   {
     title: "Empowering Africa",
     subtitle: "Your Gateway to Global Investment Opportunities",
-    image: Hero4,
+    image: Hero1,
   },
   {
     title: "Financial Inclusion",
@@ -24,12 +24,12 @@ const slides = [
   {
     title: "Transform Your Finances",
     subtitle: "Simplified Investing for Everyone",
-    image: Hero5,
+    image: Hero4,
   },
   {
     title: "Growth & Innovation",
     subtitle: "Leading the Future of Investments in Africa",
-    image: Hero1,
+    image: Hero5,
   },
 ];
 
