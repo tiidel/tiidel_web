@@ -10,6 +10,7 @@ import Footer from '../Footer/Footer'
 import Home from '../home/Home'
 import FaqPage from '../Faq/FaqPage'
 import AboutPage from '../about/AboutPage'
+import ContactUs from '../Contact/ContactUs'
 
 const AppN = () => {
   return (
@@ -37,6 +38,7 @@ const AppN = () => {
                 
                 <Route path='/home' element={ <Home /> } />
                 <Route path='/about' element={ <AboutPage /> } />
+                <Route path='/contact-us' element={ <ContactUs /> } />
                 <Route path='/' element={ <Home /> } />
         </Routes>
         <Footer />

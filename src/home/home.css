@@ -1,8 +1,6 @@
-
-
 .hero-container {
   background: transparent;
-  min-height: 100vh;
+  min-height: 85vh;
   position: relative;
 }
 
@@ -12,6 +10,7 @@
   min-height: 80vh;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #061a40 0%, #0360bd 100%);
 }
 
 .carousel-nav {
@@ -44,9 +43,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #061a4047;
-  background: linear-gradient(135deg, #061a40 0%, #0360bd 100%);
   color: white;
+  z-index: 2;
+  position: relative;
 }
 
 .text-content h1,
@@ -88,7 +87,6 @@
 
 .image-content {
   position: relative;
-  background: #0360bd;
   overflow: hidden;
 }
 
@@ -99,16 +97,23 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.hero-image.previous-image {
+  z-index: 1;
+}
+
+.hero-image.current-image {
+  z-index: 2;
 }
 
 .hero-image.fade-out {
   opacity: 0;
 }
 
-.hero-image.fade-slide-in {
-  opacity: 0;
-  transform: translateX(10px);
+.hero-image.fade-in {
+  opacity: 1;
 }
 
 .decorative-curve {
@@ -119,12 +124,25 @@
   height: 100%;
   background: linear-gradient(45deg, transparent 50%, black 51%);
   opacity: 0.1;
+  z-index: 3;
 }
 
 
 @media (max-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .image-content {
+    height: 50vh;
+    order: 1;
+  }
+
+  .text-content {
+    padding: 2rem;
+    order: 2;
   }
 
   .carousel-nav {
@@ -135,11 +153,38 @@
     transform: translateX(-50%);
   }
 
-  .text-content {
-    padding: 2rem;
-  }
-
   .text-content h1 {
     font-size: 2.5rem;
   }
+
+  .hero-image {
+    position: relative;
+  }
+}
+
+
+.image-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease alternate;
+  z-index: 1;
+}
+
+.hero-image.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-image.transitioning {
+  opacity: 0;
 }

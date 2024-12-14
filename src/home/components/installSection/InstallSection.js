@@ -1,5 +1,6 @@
 import React from 'react';
 import './InstallSection.css';
+import { ChartHistogramIcon, MoneyAdd02Icon, SecurityCheckIcon, WavingHand02Icon } from '../../../addons/icons';
 
 export default function InstallSection() {
   return (
@@ -8,7 +9,7 @@ export default function InstallSection() {
         <div className="phone-mockup">
           <img 
             src="/placeholder.svg?height=600&width=400" 
-            alt="Medical app interface showing doctor profiles and discussions"
+            alt="Tiidel app interface showing assets and transactions"
             className="mockup-image"
           />
         </div>
@@ -20,45 +21,45 @@ export default function InstallSection() {
       <div className="right-section">
         <div className="feature">
           <div className="feature-icon">
-            <img src="/placeholder.svg?height=40&width=40" alt="Search icon" />
+            <SecurityCheckIcon />
           </div>
           <div className="feature-content">
-            <h2>Find nearby doctors in your network</h2>
-            <p>You can search doctors who are near you for quick consultation</p>
+            <h2>Secure and Reliable</h2>
+            <p>Our app ensures top-notch security for your data and transactions, giving you peace of mind.</p>
           </div>
         </div>
         <div className="feature">
           <div className="feature-icon">
-            <img src="/placeholder.svg?height=40&width=40" alt="Chat icon" />
+            <MoneyAdd02Icon />
           </div>
           <div className="feature-content">
-            <h2>Health Discussion forum</h2>
+            <h2>Effortless Transactions</h2>
             <ul>
-              <li>Many interesting healthcare topics here, are created by doctors</li>
-              <li>Frequently asked questions are considered</li>
-              <li>You can participate in a direct questions and answers session with doctors</li>
+              <li>Make payments quickly and easily through a secure platform.</li>
+              <li>Track your transactions in real-time.</li>
+              <li>Receive detailed reports to manage your finances effectively.</li>
             </ul>
           </div>
         </div>
         <div className="feature">
           <div className="feature-icon">
-            <img src="/placeholder.svg?height=40&width=40" alt="Star icon" />
+            <WavingHand02Icon />
           </div>
           <div className="feature-content">
-            <h2>Browse doctors' reviews by real patients</h2>
-            <p>See what other patients have got to say about their experience with doctors on the platform.</p>
+            <h2>Exceptional User Support</h2>
+            <p>Connect with our support team anytime for assistance and guidance.</p>
           </div>
         </div>
         <div className="feature">
           <div className="feature-icon">
-            <img src="/placeholder.svg?height=40&width=40" alt="Video call icon" />
+            <ChartHistogramIcon />
           </div>
           <div className="feature-content">
-            <h2>Connect with video call</h2>
+            <h2>Insights and Analytics</h2>
             <ul>
-              <li>Talk face to face with a doctor from your phone and avoid long queues in the hospitals.</li>
-              <li>Pay for your services directly on the app</li>
-              <li>Request a lab technician to come to your home for basic test samples</li>
+              <li>Access real-time analytics to track performance and trends.</li>
+              <li>Gain insights to make informed decisions for growth.</li>
+              <li>Use detailed dashboards to monitor key metrics.</li>
             </ul>
           </div>
         </div>

@@ -63,7 +63,9 @@
 .contact_url_n .icon {
     margin-right: 0.8rem;
     margin-top: 0.3rem;
+
 }
+.change_lang_handler_n .icon *,
 .contact_url_n .icon * {
     font-size: 1.1rem;
 }
@@ -76,7 +78,7 @@
 
 
 .change_lang_handler_n {
-    padding: 0.4rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 40px;
     background-color: #1f6bf762;
     color: #fff;

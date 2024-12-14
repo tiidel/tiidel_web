@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { IoChatbubbleEllipsesSharp } from "react-icons/io5";
+import { IoChatbubbleEllipsesSharp, IoGlobe, IoGlobeOutline } from "react-icons/io5";
 import { CgMenuRight } from "react-icons/cg";
 import { VscChromeClose } from "react-icons/vsc";
 import './Navbar/nav.css'
@@ -43,7 +43,7 @@ const Nav = () => {
             </div>
             <div onClick={toggleLangDropDown} className='change_lang_handler_n'>
               <div>
-                <span className='icon'><IoChatbubbleEllipsesSharp /></span>
+                <span className='icon'><IoGlobeOutline /></span>
                 EN
               </div>
               <div className={`change_lang_dropdown_n ${showLangDropDown?'show_change_lang_dropdown_n': ''}`}>

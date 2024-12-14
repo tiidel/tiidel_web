@@ -1,36 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import Hero1 from './hero_01.jpg'
-import Hero2 from './hero_two.png'
-import Hero3 from './hero_three.png'
-import Hero4 from './hero_four.jpg'
-import Hero5 from './hero_five.jpg'
+import React, { useState, useEffect } from "react";
+import Hero1 from "./hero_01.jpg";
+import Hero2 from "./hero_two.png";
+import Hero3 from "./hero_three.png";
+import Hero4 from "./hero_four.jpg";
+import Hero5 from "./hero_five.jpg";
+
 const slides = [
   {
-    title: 'MTN Group Q3 2024',
-    subtitle: 'Trading Update',
+    title: "Empowering Africa",
+    subtitle: "Your Gateway to Global Investment Opportunities",
     image: Hero4,
   },
   {
-    title: 'Digital Solutions',
-    subtitle: 'Transforming Tomorrow',
+    title: "Financial Inclusion",
+    subtitle: "Bringing Local Markets to the Global Stage",
     image: Hero2,
   },
   {
-    title: 'Innovation First',
-    subtitle: 'Leading Change',
+    title: "Invest Smarter",
+    subtitle: "AI-Powered Insights for Better Decisions",
     image: Hero3,
   },
   {
-    title: 'Connected Future',
-    subtitle: 'Building Together',
+    title: "Transform Your Finances",
+    subtitle: "Simplified Investing for Everyone",
+    image: Hero4,
+  },
+  {
+    title: "Growth & Innovation",
+    subtitle: "Leading the Future of Investments in Africa",
     image: Hero5,
   },
 ];
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [prevSlide, setPrevSlide] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -40,12 +45,21 @@ export default function HeroSection() {
   }, [currentSlide]);
 
   const nextSlide = () => {
-    setIsAnimating(true);
-    setPrevSlide(currentSlide);
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setIsTransitioning(true);
     setTimeout(() => {
-      setIsAnimating(false);
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      setIsTransitioning(false);
     }, 500);
+  };
+
+  const handleDotClick = (index) => {
+    if (index !== currentSlide) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentSlide(index);
+        setIsTransitioning(false);
+      }, 500);
+    }
   };
 
   return (
@@ -55,38 +69,43 @@ export default function HeroSection() {
           {slides.map((_, index) => (
             <button
               key={index}
-              className={`nav-dot ${index === currentSlide ? 'active' : ''}`}
-              onClick={() => {
-                setPrevSlide(currentSlide);
-                setCurrentSlide(index);
-              }}
+              className={`nav-dot ${index === currentSlide ? "active" : ""}`}
+              onClick={() => handleDotClick(index)}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
-        
+
         <div className="text-content">
-          <h1 className={isAnimating ? 'fade-up' : ''}>{slides[currentSlide].title}</h1>
-          <p className={isAnimating ? 'fade-up' : ''}>{slides[currentSlide].subtitle}</p>
-          <button className={`cta-button ${isAnimating ? 'fade-up' : ''}`}>READ MORE</button>
+          <h1 className={isTransitioning ? "fade-up" : ""}>
+            {slides[currentSlide].title}
+          </h1>
+          <p className={isTransitioning ? "fade-up" : ""}>
+            {slides[currentSlide].subtitle}
+          </p>
+          <button className={`cta-button ${isTransitioning ? "fade-up" : ""}`}>
+            READ MORE
+          </button>
         </div>
 
         <div className="image-content">
-          {/* <img
-            src={slides[prevSlide].image}
-            alt="Previous hero image"
-            className={`hero-image ${isAnimating ? 'fade-out' : ''}`}
-          /> */}
-          <img
-            src={slides[currentSlide].image}
-            alt="Current hero image"
-            className={`hero-image ${isAnimating ? 'fade-slide-in' : ''}`}
-          />
+          {slides.map((slide, index) => (
+            <img
+              key={index}
+              src={slide.image}
+              alt={`Hero image ${index + 1}`}
+              className={`hero-image 
+                ${index === currentSlide ? "active" : ""} 
+                ${
+                  isTransitioning && index === currentSlide
+                    ? "transitioning"
+                    : ""
+                }`}
+            />
+          ))}
           <div className="decorative-curve" />
         </div>
       </div>
-
     </div>
   );
 }
-
