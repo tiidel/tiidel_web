@@ -56,10 +56,15 @@
   @media (max-width: 768px) {
     .card-container {
       gap: 2rem;
+      display: block;
+      width: 90%;
+      padding-bottom: 2rem;
     }
   
     .card {
       padding: 1.5rem;
+      transform: none !important;
+      margin-block: 1rem;
     }
   
     .card img {
