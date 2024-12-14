@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Hero1 from "./hero_01.jpg";
+import Hero1 from "./hero_01.png";
 import Hero2 from "./hero_two.png";
 import Hero3 from "./hero_three.png";
-import Hero4 from "./hero_four.jpg";
-import Hero5 from "./hero_five.jpg";
+import Hero4 from "./hero_four.png";
+import Hero5 from "./hero_five.png";
 
 const slides = [
   {
@@ -24,12 +24,12 @@ const slides = [
   {
     title: "Transform Your Finances",
     subtitle: "Simplified Investing for Everyone",
-    image: Hero4,
+    image: Hero5,
   },
   {
     title: "Growth & Innovation",
     subtitle: "Leading the Future of Investments in Africa",
-    image: Hero5,
+    image: Hero1,
   },
 ];
 

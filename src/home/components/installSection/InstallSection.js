@@ -1,6 +1,7 @@
 import React from 'react';
 import './InstallSection.css';
 import { ChartHistogramIcon, MoneyAdd02Icon, SecurityCheckIcon, WavingHand02Icon } from '../../../addons/icons';
+import InvestApp from '../invest_placeholder.png'
 
 export default function InstallSection() {
   return (
@@ -8,7 +9,7 @@ export default function InstallSection() {
       <div className="left-section">
         <div className="phone-mockup">
           <img 
-            src="/placeholder.svg?height=600&width=400" 
+            src={InvestApp} 
             alt="Tiidel app interface showing assets and transactions"
             className="mockup-image"
           />
