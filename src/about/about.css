@@ -62,9 +62,20 @@
   .benefit-card {
     text-align: center;
     padding: 2rem;
-    background-color: #f5f5f5;
+    background-color: #5cffe75d;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .benefit-card:nth-child(2) {
+    background-color: #65f1a437;
+  }
+  
+  .benefit-card:nth-child(3) {
+    background-color: #1489ff2a;
+  }
+  .benefit-card:nth-child(4) {
+    background-color: #ff14722a;
   }
   
   .benefit-icon {
@@ -82,8 +93,9 @@
   
   .mission, .vision {
     padding: 2rem;
-    background-color: #f5f5f5;
+    background-color: #0230857d;
     border-radius: 10px;
+    color: #fff;
   }
   
   .location-section {

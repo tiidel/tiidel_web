@@ -3,7 +3,7 @@ import { IoChatbubbleEllipsesSharp, IoGlobe, IoGlobeOutline } from "react-icons/
 import { CgMenuRight } from "react-icons/cg";
 import { VscChromeClose } from "react-icons/vsc";
 import './Navbar/nav.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/images/logo.png'
 import ChipTabs from './Navbar/NavA';
 
@@ -18,6 +18,12 @@ const Nav = () => {
     setShowLangDropDown(!showLangDropDown)
   }
 
+  const removeMenu = (e) => {
+    if(e.target.tagName === 'A') {
+      setShownav(false)
+    }
+  }
+
   return (
     <nav>
       <div onClick={() => setShowLangDropDown(false)} className={`shadow_n_lang ${showLangDropDown ? 'show':''}`} />
@@ -28,11 +34,14 @@ const Nav = () => {
             <img src={logo} alt='logo' width='100px' />
           </h4>
           <div className={`center_nav_n ${shownav ? "show_nav" : ""}`}>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>get</li>
-              <li onClick={() => navigate('/login')}>Log in</li>
+            <ul onClick={e => removeMenu(e)}>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/invest">Invest</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/faq">Frequent Questions</Link></li>
+              <li><Link to="https://blog.tiidel.com">Our Blog</Link></li>
+              <li><Link to="/register">Register</Link></li>
+              <li><Link to="/login">Log In</Link></li>
             </ul>
             <ChipTabs tabs={tabs} />
           </div>
