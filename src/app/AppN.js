@@ -12,6 +12,7 @@ import FaqPage from '../Faq/FaqPage'
 import AboutPage from '../about/AboutPage'
 import ContactUs from '../Contact/ContactUs'
 import WaitingPage from '../waiting_and_404/WaitingPage'
+import RSVP from '../home/RSVP/RSVP'
 
 const AppN = () => {
   return (
@@ -36,6 +37,7 @@ const AppN = () => {
 
                 <Route path='/faq' element={ <FaqPage /> } />
                 <Route path='/invest' element={ <WaitingPage /> } />
+                <Route path='/waiting-list' element={ <RSVP /> } />
 
                 
                 <Route path='/home' element={ <Home /> } />

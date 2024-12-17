@@ -19,16 +19,20 @@
 
 .image-placeholder {
     width: 100%;
-    padding-bottom: 56.25%;
+    /* padding-bottom: 56.25%; */
     background-color: #c4c4c4;
     border-radius: 14px;
+    overflow: hidden;
+}
+.image-placeholder img {
+    width: 100%;
+    object-fit: contain;
 }
 
-.news-section.left .image-placeholder {
+/* .news-section.left .image-placeholder {
     background-color: blue;
     height: 100%;
-
-}
+} */
 
 .news-content {
     background-color: #fff;

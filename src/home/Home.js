@@ -3,12 +3,14 @@ import './home.css'
 import HeroSection from './components/HeroSection'
 import InstallSection from './components/installSection/InstallSection'
 import ArticleSection from './components/articles/ArticleSection'
+import HomeBanner from './components/HomeBarner'
 
 const Home = () => {
   return (
     <div className='home_page'>
       <HeroSection />
       <InstallSection />
+      <HomeBanner />
       <ArticleSection />
       {/* <section className='landing'>
         <div className='landing_text'>It is never too late to invest in your future</div>

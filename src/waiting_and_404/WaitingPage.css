@@ -1,4 +1,4 @@
-
+.waiting_list_page,
   .waiting-page {
     min-height: 60rem;
 }
@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    max-width: 90%;
+    width: 90%;
     margin: auto;
     max-width: 1000px;
   }

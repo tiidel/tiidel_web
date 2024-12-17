@@ -6,6 +6,7 @@ import { HiShieldCheck } from "react-icons/hi2";
 import { RiComputerLine } from "react-icons/ri";
 import { TbExchange } from "react-icons/tb";
 import { FcParallelTasks } from "react-icons/fc";
+import { motion } from "framer-motion";
 
 
 import Support from '../assets/images/landing/Support.png'
@@ -18,7 +19,13 @@ const FaqPage = () => {
         <div className='faq_page'>
             <header className='faq_page_header'>
                 <div className='search_section'>
-                    <h2>How can we help you?</h2>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        >
+                        How can we help you?
+                    </motion.h2>
                     <div className='faq_search_bar'>
                         <input type='text' placeholder='Search for answers...' />
                         <button><RiSearch2Line /></button>
