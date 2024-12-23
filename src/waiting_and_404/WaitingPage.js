@@ -6,6 +6,7 @@ import Image3 from './tiidel_placeholder_03.png';
 import './WaitingPage.css';
 
 const WaitingPage = () => {
+  
   return (
     <div className="waiting-page">
       <div className="card-container">
