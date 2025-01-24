@@ -133,7 +133,7 @@ export const Login = () => {
                                 <div className="buttonWrapper signupBtn">
                                         <p className="or">OR</p>
                                         <div className='other_autheticate'>
-                                                <GoogleButton />
+                                                {/* <GoogleButton /> */}
                                                 <FacebookButton  />
                                                 <LinkedInButton />
                                         </div>

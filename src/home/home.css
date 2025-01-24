@@ -234,7 +234,7 @@
 
 .image-content {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .hero-image {
