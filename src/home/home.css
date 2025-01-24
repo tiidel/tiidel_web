@@ -169,7 +169,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 60rem) {
   .hero-content {
     grid-template-columns: 1fr;
     display: flex;
@@ -234,7 +234,7 @@
 
 .image-content {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .hero-image {
