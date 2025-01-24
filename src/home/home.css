@@ -28,14 +28,14 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #0360bd;
+  border: 2px solid #3acf9b;
   background: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .nav-dot.active {
-  background: var(--main-color);
+  background: #3acf9b;
 }
 
 .text-content {
@@ -173,7 +173,15 @@
   .hero-content {
     grid-template-columns: 1fr;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .hero-content .image-content {
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    background: #0003;
+    margin-top: 1rem;
   }
 
   .image-content {
