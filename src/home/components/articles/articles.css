@@ -74,7 +74,7 @@
     color: #0056b3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 40rem) {
     .news-section.left .image-placeholder {
         height: auto;
 
@@ -87,6 +87,28 @@
     .landing-section {
         grid-template-columns: 1fr;
     }
+
+    .news-sections {
+        grid-gap: 1rem;
+    }
+
+    .news-content {
+        position: static;
+        transform: none;
+        width: auto;
+    }
+}
+
+@media (max-width: 60rem) {
+    .news-section.left .image-placeholder {
+        height: auto;
+
+    }
+
+    .image-placeholder {
+        border-radius: 0px;
+    }
+
 
     .news-sections {
         grid-gap: 1rem;
