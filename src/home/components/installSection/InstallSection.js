@@ -65,7 +65,7 @@ export default function InstallSection() {
           </div>
         </div>
       </div>
-      <a href="https://wa.me/+237676638050" className="whatsapp-button">
+      <a href="https://wa.me/+237620590187" className="whatsapp-button">
         Message us on WhatsApp
       </a>
     </div>

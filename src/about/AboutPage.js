@@ -120,7 +120,7 @@ const AboutPage = () => {
           <div className="contact-item">
             <CustomerSupportIcon />
             <h3>Phone</h3>
-            <p>+237 676 638 050</p>
+            <p>+237 620 59 01 87</p>
           </div>
           <div className="contact-item">
             <MailOpen01Icon />

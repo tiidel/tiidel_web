@@ -88,7 +88,7 @@ const ContactUs = () => {
 
             <div className='call_us_n'>
                 <h2 className='contact_us_title bold'>Call us</h2>
-                <a href='tell:+236676638050' className='contact_us_text_n'>+237 676 63 80 50</a>
+                <a href='tell:+236620590187' className='contact_us_text_n'>+237 620 59 01 87</a>
             </div>
 
             <div className='contact_our_social_media_n'>
