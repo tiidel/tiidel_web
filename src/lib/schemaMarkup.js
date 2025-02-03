@@ -58,7 +58,6 @@ export const generateSchemaMarkup = (pageType, data) => {
     return schemas[pageType] || baseSchema;
   };
   
-  // Component to inject schema
   export const SchemaMarkup = ({ pageType, data }) => {
     const schema = generateSchemaMarkup(pageType, data);
     return (
