@@ -1,0 +1,162 @@
+.terms_page {
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.progress_bar_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.progress_bar_fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3C6EFB 0%, #e57373 100%);
+    width: 0;
+    transition: width 0.2s ease-out;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.terms_page_header {
+    background-color: #061A40;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.terms_header_content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.terms_header_content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.terms_header_content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+.terms_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.terms_section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.terms_section:last-child {
+    border-bottom: none;
+}
+
+.terms_section h2 {
+    color: #061A40;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.terms_section h3 {
+    color: #20AF7F;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 500;
+}
+
+.terms_section p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.terms_section ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.terms_section ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.transaction_limits, .fee_structure {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.limit_item, .fee_item, .contact_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.limit_item:last-child, .fee_item:last-child, .contact_item:last-child {
+    border-bottom: none;
+}
+
+.limit_item span:first-child, 
+.fee_item span:first-child,
+.contact_item span:first-child {
+    font-weight: 500;
+    color: #061A40;
+}
+
+.contact_info {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.final_section {
+    background-color: #f0f7f4;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.final_section h2 {
+    color: #20AF7F;
+}
+
+@media (max-width: 768px) {
+    .terms_header_content h1 {
+        font-size: 2rem;
+    }
+    
+    .terms_section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .terms_section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .limit_item, .fee_item, .contact_item {
+        flex-direction: column;
+    }
+    
+    .limit_item span:last-child, 
+    .fee_item span:last-child,
+    .contact_item span:last-child {
+        margin-top: 0.3rem;
+        font-weight: 500;
+        color: #20AF7F;
+    }
+}

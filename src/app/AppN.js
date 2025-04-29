@@ -14,6 +14,7 @@ import ContactUs from '../Contact/ContactUs'
 import WaitingPage from '../waiting_and_404/WaitingPage'
 import RSVP from '../home/RSVP/RSVP'
 import { routeSeoConfig, withSEO } from '../lib/seoUtils'
+import TermsPage from '../Terms/TermsPage'
 
 const AppN = () => {
 
@@ -38,6 +39,7 @@ const AppN = () => {
           <Route path='/waiting-list' element={<EnhancedRSVP />} />
           <Route path='/home' element={<EnhancedHome />} />
           <Route path='/about' element={<EnhancedAbout />} />
+          <Route path='/privacy-policy' element={<TermsPage />} />
           <Route path='/contact-us' element={<EnhancedContact />} />
           <Route path='/' element={<EnhancedHome />} />
 
